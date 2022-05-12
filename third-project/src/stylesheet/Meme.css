@@ -1,0 +1,45 @@
+.meme__container {
+  margin: 2rem auto;
+  width: 100%;
+  /* min-width: 530px; */
+  max-width: 80%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+
+.meme__button {
+  grid-column: span 2;
+}
+
+.form > * {
+  background: none;
+  border: 1px solid #64ffda;
+  color: white;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.meme__button {
+  background-color: #64ffdb30;
+}
+.meme__button:hover {
+  background-color: #64ffdb70;
+  cursor: pointer;
+}
+
+.meme__img-container {
+  min-width: 100%;
+  margin: 1rem auto;
+}
+
+.meme__img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}

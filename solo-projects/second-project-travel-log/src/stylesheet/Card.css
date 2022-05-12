@@ -1,0 +1,54 @@
+.card-container {
+  display: flex;
+  max-width: 80%;
+  min-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card__img {
+  margin-right: 2rem;
+  max-width: 150px;
+  height: 245px;
+  border-radius: 0.5rem;
+  filter: grayscale(100%);
+  filter: opacity(0.8) drop-shadow(0 0 0 #ff4f4f);
+
+  transition: filter 0.2s ease-in-out;
+}
+
+.card__img:hover {
+  filter: opacity(1) drop-shadow(0 0 0 #ff4f4f);
+}
+
+.card__info {
+  margin: 1rem 0;
+}
+
+.card__icon {
+  width: 10px;
+  opacity: 0.5;
+}
+
+.card__country {
+  padding: 0 1rem 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.card__link {
+  color: #666;
+}
+
+.card__location {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.card__date {
+  padding: 1.3rem 0rem 0.5rem 0rem;
+  font-weight: bold;
+}
+
+.card__text {
+  text-align: justify;
+}

@@ -1,0 +1,19 @@
+.header__container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+  background-color: #ff4f4f;
+}
+
+.header__img {
+  width: 30px;
+  margin: 0.5rem;
+}
+
+.header__text {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}

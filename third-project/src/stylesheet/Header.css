@@ -1,0 +1,29 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #64ffda;
+  color: #e6f1ff;
+  height: 65px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__img {
+  max-width: 40px;
+  animation: rotation 15s infinite linear;
+  margin-right: 0.5rem;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

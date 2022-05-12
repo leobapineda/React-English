@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 70vw;
+  min-width: 500px;
+  border: 1px solid #00000030;
+}
+
+.cards-container {
+  margin: 0 1rem;
+  display: flex;
+  overflow: auto;
+}
