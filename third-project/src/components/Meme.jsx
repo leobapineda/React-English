@@ -42,11 +42,13 @@ export default function Meme() {
           placeholder={'Bottom Text'}
         />
         <button className="meme__button" onClick={getMemeImage}>
-          Get a new meme 1 😆
+          Get a new meme 😆
         </button>
       </div>
       <div className="meme__img-container">
         <img className="meme__img" src={meme.randomImage} alt="meme img" />
+        <div className="meme-text top" >one does not</div>
+        <div className="meme-text bottom" >walk into</div>
       </div>
     </main>
   );
