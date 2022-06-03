@@ -37,6 +37,7 @@
   min-width: 100%;
   margin: 1rem auto;
   position: relative;
+
 }
 
 .meme__img {
@@ -46,9 +47,9 @@
 }
 
 .meme-text{
-  width: 40%;
   position: absolute; 
   left: 0; 
+  width: 40%;
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
