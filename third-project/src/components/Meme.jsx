@@ -1,9 +1,8 @@
 import { React, useState, useEffect } from "react";
+// atylesheet
 import "../stylesheet/Meme.css";
 
 export default function Meme() {
-
-  const [allMemeImages, setallMemeImages] = useState([]);
 
   const [meme, setMeme] = useState({
     topText: '',
@@ -11,21 +10,21 @@ export default function Meme() {
     randomImage: 'https://i.imgflip.com/28j0te.jpg',
   });
 
-  const [memeText, setMemeText] = useState({topText:'', bottomText:''});
+  const [allMemeImages, setallMemeImages] = useState([]);
 
 
   useEffect(() => {
-    fetch("https://api.imgflip.com/get_memes")
+    fetch('https://api.imgflip.com/get_memes')
       .then(response => response.json())
       .then(apiData => setallMemeImages(apiData.data.memes))
-  }, [])
+  })
 
-  console.log(allMemeImages);
+
+  const [memeText, setMemeText] = useState({topText:'', bottomText:''});
 
   function getMemeImage(e) {
     e.preventDefault()
     const randomNumber = Math.floor(Math.random() * allMemeImages.length)
-    console.log(allMemeImages);
     let memeUrl = allMemeImages[randomNumber].url
     
     setMeme((prevMeme) => {
